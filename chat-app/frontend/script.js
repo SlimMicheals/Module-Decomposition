@@ -61,3 +61,12 @@ async function dislikeMessage(id) {
 getMessages();
 
  setInterval(getMessages, 1000);
+ const clearButton = document.getElementById("clear-btn");
+
+clearButton.addEventListener("click", async () => {
+  await fetch(`${server}/messages`, {
+    method: "DELETE",
+  });
+
+  getMessages();
+});
