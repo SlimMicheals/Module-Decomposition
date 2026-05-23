@@ -59,3 +59,5 @@ async function dislikeMessage(id) {
 }
 
 getMessages();
+
+ setInterval(getMessages, 1000);
