@@ -37,6 +37,13 @@ app.post("/messages/:id/dislike", (req, res) => {
   message.dislikes += 1;
   res.json(message);
 });
+app.delete("/messages", (req, res) => {
+  messages.length = 0;
+
+  res.json({
+    success: true,
+  });
+});
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
