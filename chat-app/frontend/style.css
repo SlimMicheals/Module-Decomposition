@@ -43,8 +43,8 @@ body {
 }
 
 #messages {
-  padding: 25px;
-  min-height: 300px;
+  padding: 20px;
+  min-height: 500px;
 }
 
 .message {
