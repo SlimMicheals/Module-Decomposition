@@ -20,6 +20,7 @@ app.post("/messages", (req, res) => {
     text: req.body.text,
     likes: 0,
     dislikes: 0,
+    time: new Date().toLocaleTimeString(),
   };
 
   messages.push(newMessage);
