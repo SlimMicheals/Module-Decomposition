@@ -16,6 +16,7 @@ async function getMessages() {
     div.innerHTML = `
       <strong>${message.username}</strong>
       <p>${message.text}</p>
+      <p class="time">${message.time}</p>
       <button onclick="likeMessage(${message.id})">💗 Like ${message.likes}</button>
       <button onclick="dislikeMessage(${message.id})">👎 Dislike ${message.dislikes}</button>
     `;
