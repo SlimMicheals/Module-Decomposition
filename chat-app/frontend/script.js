@@ -1,7 +1,7 @@
 const form = document.getElementById("message-form");
 const messagesDiv = document.getElementById("messages");
 
-const server = "http://localhost:3000";
+const server = "http://zprywrhs4bn9tkoessxlkb93.178.105.39.91.sslip.io";
 
 async function getMessages() {
   const response = await fetch(`${server}/messages`);
